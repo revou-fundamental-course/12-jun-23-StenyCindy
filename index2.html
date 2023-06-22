@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Converstion Website</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Website Konversi Suhu</h1>
+            </header>
+
+            <section>
+                <div>
+                    <p class="Penjelasan">Masukkan suhu derajat Fahrenheit (°F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celcius (°C).</p>
+                </div>
+                
+                <div>
+                    <form name="input">
+                        <label for="fahrenheit">Fahrenheit (°F) :</label><br>
+                        <input type="number" name="fahrenheit" class="inputFahrenheit" id="fah"><br>
+                        <button type="button" class="tombol" onclick="converstionFahrenheit()">Konversi</button>
+                        <button type="reset" class="tombol">Reset</button>
+                        <button type="reset" class="tombol">Reverse</button>
+                    </form>
+                </div>
+            </section>
+    
+            <div class="displayTemperature">
+                <label for="celcius">Celcius (°C):</label><br>
+                <input type="text" class="outputCelcius" id="cel">
+            </div>
+    
+            <div class="Explanation">
+                <label for="kalkulasi">Cara Kalkulasi:</label><br>
+                <input type="text" class="outputKalkulasi" id="kal">
+            </div>
+
+            <a href="index.html">Celcius ke Fahrenheit</a>
+
+            <div class="caraKonversi">
+                <p class="p2"><strong>Cara Konversi Dari Fahrenheit (°F) ke Celcius (°C)</strong></p>
+                <p>suhu S dalam derajat Celcius (°C) sama dengan suhu S dalam derajat Fahrenheit (°F) dikurang 32 dikali 5/9.</p>
+                <p>S(°C) = (S(°F)-32) * 5/9</p>
+                <p>atau</p>
+                <p>S(°C) = (S(°F)-32) * 0.5</p>
+            </div>
+
+            <footer>
+                <p><strong>Created By Steny</strong></p>
+            </footer>
+
+            <script src="script.js  "></script>
+        </div>
+        
+    </body>
+</html>
